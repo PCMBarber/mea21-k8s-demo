@@ -15,9 +15,9 @@ spec:
         app: nginx
     spec:
       volumes:
-        - name: nginx-volume
-          configMap:
-            name: nginx-data
+      - name: nginx-volume
+        configMap:
+          name: nginx-data
       containers:
       - name: nginx-container
         image: nginx:latest
